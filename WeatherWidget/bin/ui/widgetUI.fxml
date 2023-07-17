@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="160.0" prefWidth="130.0" style="-fx-background-color: rgb(255, 255, 255, 0.0);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.maincontroller">
+   <children>
+      <StackPane prefHeight="127.0" prefWidth="130.0">
+         <children>
+            <Circle fx:id="status_background" fill="DODGERBLUE" radius="56.0" stroke="TRANSPARENT" strokeType="INSIDE">
+               <effect>
+                  <DropShadow height="23.97" radius="7.7775" width="9.14" />
+               </effect>
+            </Circle>
+            <Group StackPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="cityName" layoutY="-20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Los Angeles" textAlignment="CENTER" wrappingWidth="95.205078125" />
+                  <Text fx:id="cityTemp" layoutX="7.0" layoutY="6.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00.00" textAlignment="CENTER" wrappingWidth="79.0078125" />
+               </children>
+            </Group>
+            <TextField fx:id="citySearch" prefHeight="25.0" prefWidth="114.0" translateY="80.0" />
+            <Circle fx:id="status_button" fill="#1f93ff00" layoutX="75.0" layoutY="74.0" radius="56.0" stroke="TRANSPARENT" strokeType="INSIDE">
+               <effect>
+                  <DropShadow height="23.97" radius="7.7775" width="9.14" />
+               </effect>
+            </Circle>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
